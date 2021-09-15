@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 8px;
+}
+h1,
+h2 {
+    margin: 30px 0px;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0px;
+    font-weight: 300px;
+}
+.btn {
+    display: inline-block;
+    min-width: 100%;
+    padding: 15px 25px;
+    margin: 12px 0;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    font-size: 11.6px;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+img {
+    width:100%;
+    height: auto;
+}
+.hide-on-mobile {
+    display: none;
+}
+.hide-on-large {
+    display: block;
+}
+.hide-on-mobile {
+    display: none;
+}
+@media (min-width: 768px) {
+    main {
+        text-align: start;
+        padding: 0px 8px 30px;
+        margin: 0px;
+    }    
+    section {
+        display: flex;
+        width: 700px;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+        top: -90px;
+    }  
+    .btn {
+        min-width: 145px;
+        padding: 10px 45px;
+        font-size: 16px;
+    }
+    .hero-section {
+        background: url(../img/hero-large.jpg);
+        background-position: center;
+        background-size: cover;
+        background-position: center;
+        min-height: 550px;
+        width: 100%;
+        position: relative;
+        top: -30px;
+    }
+    .hero-text {
+        color: #fff;
+        padding: 60px 80px;
+    }
+    .hero-text h1 {
+        font-size: 56px;
+    }
+    .hero-text p {
+        font-size: 22px;
+        max-width: 330px;       
+    }
+    .hero-text .btn {
+        border: 1px solid #fff;
+        color: #fff;       
+    }
+    .hero-text .btn:hover {
+        border: 0;
+    }
+    section.the-sunnies {
+        flex-direction: row-reverse;
+    }
+    img {
+        width:350px;
+    }
+    .sub-text {
+        margin: 0 30px 0 20px;
+    }
+    .hide-on-mobile {
+        display: block;
+    }
+    .hide-on-large {
+        display: none;
+    }
+          
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 38.9px;
+    }
+    p {
+        font-size: 24px;
+    }
+    section {
+        width: 900px;
+        top: -140px;
+    }
+    .hero-section {
+        min-height: 738px;
+    }
+    .hero-text {
+        padding: 100px;
+    }
+    .hero-text h1 {
+        font-size: 76.3px;
+    }
+    .hero-text p {
+        font-size: 22px;
+        max-width: 430px;       
+    }
+    img {
+        width:450px;
+    }
+    .sub-text {
+        margin-left: 50px;
+    }
+}
+@media (min-width: 1600px) {
+    section {
+        width: 1048px;
+        top: -150px;
+    }
+    .hero-section {
+        min-height: 900px;
+        width: 1600px;
+    }
+    .hero-text {
+        padding: 230px;
+    }
+    img {
+        width:524px;
+    }
+}
